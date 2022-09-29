@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello Andronicus</h1>
+  <h3>{{title}}</h3>
+  <h1 *ngIf="count>5"> I am visible</h1><br>
+  <h1 *ngIf="count==0"> I am 0</h1>
+  <button (click)="increment()">Increment Count</button><br><br>
+  <button (click)="decrement()">Decrement Count</button>
+  <div>
+    <p>Number list</p>
+    <li *ngFor="let item of listOfNumber">{{item}}</li>
+    <p>Names List</p>
+    <li *ngFor="let name of listOfNames">{{name}}</li>
+  </div>
+  <br><br>Input Box
+  <div>
+    <input type="text" [(ngModel)]="number1"><br><br>
+    <input type="text" [(ngModel)]="number2"><br><br>
+    <button (click)="add()">Add</button>
+    <p>Sum is:{{result}}</p>
+  </div>
+
+</body>
+</html>
