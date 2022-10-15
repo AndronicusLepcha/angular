@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RandromComponent } from './randrom/randrom.component';
+import { RollnoComponent } from './rollno/rollno.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RandromComponent
+    RandromComponent,
+    RollnoComponent
   ],
   imports: [
     BrowserModule,
